@@ -7,7 +7,7 @@ An authentication class for WordPress.
 Anywhere in your theme or plugin, use the following code:
 
 ```php
-WpLoginAuth::boot([
+WPKit\WpLoginAuth::boot([
   'allow' => array(
     '/some/page'
   ),
