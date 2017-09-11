@@ -25,3 +25,6 @@ WPKit\WpLoginAuth::boot([
   'mask_wp_login' => false
 ]);
 ```
+## License
+
+wp-kit/wp-login-auth is open-sourced software licensed under the MIT License.
