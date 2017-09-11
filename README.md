@@ -15,7 +15,7 @@ composer require "wp-kit/wp-login-auth"
 Anywhere in your theme or plugin, use the following code:
 
 ```php
-WPKit\WpLoginAuth::boot([
+WPKit\WpLoginAuth\WpLoginAuth::boot([
   'allow' => array(
     '/some/page'
   ),
