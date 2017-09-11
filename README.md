@@ -2,7 +2,15 @@
 
 An authentication class for WordPress.
 
-# Usage
+## Installation
+
+Install via [```Composer```](https://getcomposer.org/) in a composer driven folder:
+
+```php
+composer require "wp-kit/wp-login-auth"
+```
+
+## Usage
 
 Anywhere in your theme or plugin, use the following code:
 
