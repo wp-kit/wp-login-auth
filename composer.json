@@ -1,0 +1,27 @@
+{
+	"name": "wp-kit/wp-login-auth",
+	"description": "An authentication class for WordPress",
+	"keywords": ["wordpress", "authentication"],
+	"homepage" : "https://github.com/wp-kit/wp-login-auth",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Creative Little Dots",
+			"email" : "tech@creativelittledots.co.uk",
+			"homepage" : "https://creativelittledots.co.uk/",
+			"role" : "Developers"
+		}
+	],
+	"config": {
+		"preferred-install": "dist"
+	},
+	"require": {
+        "php": ">=5.6.4"
+    },
+	"type": "library",
+	"autoload": {
+        "psr-4": {
+            "WPKit\\WpLoginAuth\\": "src/WpLoginAuth" 
+        }
+    }
+}
