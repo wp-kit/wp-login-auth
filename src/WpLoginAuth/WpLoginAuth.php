@@ -38,13 +38,13 @@
 	     */
 	    public function boot($settings = array()) {
 		    
-		    if( ! static::$instance ) {
+		    if( ! self::$instance ) {
 			    
-			    static::$instance = new static($settings);
+			    self::$instance = new self($settings);
 			    
 		    }
 		    
-		    static::$instance->start();
+		    self::$instance->start();
 		    
 	    }
 	    
