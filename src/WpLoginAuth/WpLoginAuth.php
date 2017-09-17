@@ -36,15 +36,15 @@
 	     * @param array $settings
 	     * @return void
 	     */
-	    public function boot($settings = array()) {
+	    public static function boot($settings = array()) {
 		    
-		    if( ! self::$instance ) {
+		    if( ! static::$instance ) {
 			    
-			    self::$instance = new self($settings);
+			    static::$instance = new static($settings);
 			    
 		    }
 		    
-		    self::$instance->start();
+		    static::$instance->start();
 		    
 	    }
 	    
