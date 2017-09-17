@@ -44,7 +44,7 @@
 			    
 		    }
 		    
-		    static::$instance->start();
+		    return static::$instance->start();
 		    
 	    }
 	    
@@ -64,7 +64,7 @@
 			
 			$is_allowed = $this->isAllowed();
 
-            if ( ! is_user_logged_in() && ! $is_allowed ) {
+            if ( ! $is_allowed ) {
                 
                 $current_url = get_current_url();
                 
@@ -73,6 +73,8 @@
                 exit();
                 
             }
+		    
+		    return $is_allowed;
 	        
 	    }
     	
